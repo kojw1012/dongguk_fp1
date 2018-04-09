@@ -1,17 +1,17 @@
 import java.util.Scanner;
 
-public class homework2_1 {
-    public static void main(String[]args){
-        Scanner sc= new Scanner(System.in);
-        System.out.println("Input your number:");
-        int a= sc.nextInt();
-        byte v =(byte)a;
+public class homework2_1{
+    public static void  main(String[]args){
+	Scanner sc= new Scanner(System.in);
+	System.out.println("Input number");
+	int a= sc.nextInt();
+	byte v=(byte)a;
 
-        System.out.printf("%sëŠ” %dë¥¼ 2ì§„ìˆ˜ë¡œ í‘œí˜„í•œ ê²ƒìž…ë‹ˆë‹¤.", toBinaryString(v),a);
-    }
-    static String toBinaryString(byte v){
-        String zero = "00000000";
-        String tmp= zero+Integer.toBinaryString(v);
-        return tmp.substring(tmp.length() -8);
-    }
+	System.out.printf("%s´Â %d¸¦ 2Áø¼ö·Î Ç¥ÇöÇÑ °ÍÀÔ´Ï´Ù.",toBinaryString(v),a);
+}
+   static String toBinaryString(byte v){
+	String zero = "00000000";
+	String tmp = zero + Integer.toBinaryString(v);
+	return tmp.substring(tmp.length()-8);
+   }
 }
